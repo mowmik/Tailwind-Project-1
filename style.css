@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "League Spartan";
+}
+
+@layer utilities {
+    .news-head{
+        @apply text-center w-full bg-[#E6EBF3] rounded-full md:py-4 py-2 font-medium text-[18px] hover:cursor-pointer transition-all duration-300 hover:scale-105;
+    }
+    .div-hover{
+       @apply hover:scale-x-95 transition duration-300  hover:cursor-pointer dark:hover:bg-gray-900 hover:bg-gray-200 hover:rounded
+    }
+    .btn-hover{
+        @apply bg-black text-white scale-110 transition-all duration-500;
+    }
+}
